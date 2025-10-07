@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Soliven Luxury & Spa | Home</title>
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+  <header class="site-header">
+  <nav class="nav nav-left">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About</a>
+  </nav>
+
+  <a href="index.html" class="brand">
+    <img src="img/logo.png" alt="Hotel Soliven Luxury & Spa Logo" class="nav-logo">
+  </a>
+
+  <nav class="nav nav-right">
+    <a href="manage.html">Manage</a>
+    <a href="analytics.html" class="active">Analytics</a>
+  </nav>
+</header>
+
+<main class="container">
+    <h1>Hotel Analytics Dashboard</h1>
+    <p class="muted">Sample data visualization created using Chart.js.</p>
+
+    <section class="panel">
+      <h2>Occupancy Rate by Month</h2>
+      <canvas id="occupancyChart"></canvas>
+    </section>
+
+    <section class="panel">
+      <h2>Average Daily Rate (ADR) by Room Type</h2>
+      <canvas id="adrChart"></canvas>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Hotel Soliven Luxury &amp; Spa</p>
+  </footer>
+
+  <!-- Chart.js library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Your custom analytics logic -->
+<script src="js/analytics.js"></script>
+
+</body>
+</html>

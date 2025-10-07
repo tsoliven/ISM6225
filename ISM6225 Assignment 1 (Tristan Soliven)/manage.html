@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Soliven Luxury & Spa | Home</title>
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+ <header class="site-header">
+  <nav class="nav nav-left">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About</a>
+  </nav>
+
+  <a href="index.html" class="brand">
+    <img src="img/logo.png" alt="Hotel Soliven Luxury & Spa Logo" class="nav-logo">
+  </a>
+
+  <nav class="nav nav-right">
+    <a href="manage.html" class="active">Manage</a>
+    <a href="analytics.html">Analytics</a>
+  </nav>
+</header>
+
+<main class="container">
+    <h1>Manage Reservations</h1>
+    <p class="muted">Mock CRUD (Create, Read, Update, Delete) form.</p>
+
+    <section class="form">
+      <h2>Add / Update Reservation</h2>
+      <div class="grid">
+        <input type="text" id="guestName" placeholder="Guest Name">
+        <input type="text" id="roomType" placeholder="Room Type (e.g. Deluxe Suite)">
+        <input type="date" id="checkIn">
+        <input type="date" id="checkOut">
+      </div>
+      <div class="actions">
+        <button class="btn" onclick="addReservation()">Add / Update</button>
+        <button class="btn-outline" onclick="clearForm()">Clear</button>
+      </div>
+    </section>
+
+    <section class="table-wrap">
+      <table id="reservationTable">
+        <thead>
+          <tr>
+            <th>Guest Name</th>
+            <th>Room Type</th>
+            <th>Check-In</th>
+            <th>Check-Out</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Hotel Soliven Luxury &amp; Spa</p>
+  </footer>
+</body>
+</html>
